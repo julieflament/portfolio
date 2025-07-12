@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
-    file_path = "file://" + os.path.abspath("/Users/julie/portfolio/html/portfolio.html")
+    file_path = "file://" + os.path.abspath("/Users/julie/portfolio/my_app/portfolio.html")
     driver.get(file_path)
     yield driver
     driver.quit()
